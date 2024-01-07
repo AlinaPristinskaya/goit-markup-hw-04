@@ -34,10 +34,14 @@ img{
        margin: 0 auto;
 }
 .header{
+ 
+  
         border-bottom: 1px solid  #E7E9FC;
         background: #FFF);
         padding-top: 24px;
-        padding-bottom: 24px;
+        padding-bottom:24px ;
+      
+      
       }
 
 .logo{
@@ -51,19 +55,21 @@ color: #4d5ae5;
 display: flex;
 align-items: center;
 margin-right: 76px;
-display: inline-block;
-margin-bottom: 16px;
+/* display: inline-block;
+margin-bottom: 16px; */
 
 }
 .header-wrap{
-
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .nav-wrap{
   display: flex;
-  align-items: center; 
+    align-items: center;
+    justify-content: space-between;
 }
 
 .view{
@@ -74,13 +80,20 @@ margin-bottom: 16px;
 }
 .list {
     list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .link{
   color: #2e2f42 ;
-  padding: 24px 0
+  padding: 28px 0
 }
 .site-nav{
+
   display: flex;
+    justify-content: center;
+    padding-left: 0px;
   gap: 40px;
 }
 .site-nav .link {
@@ -90,16 +103,40 @@ margin-bottom: 16px;
     letter-spacing: 0.02em;
 
   }
+  .item{
+    position: relative;
+  }
+
+
+  
+  .link::after {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    content: "";
+    height: 4px;
+    left: 0px;
+    background-color: #404BBF;;
+    border-radius: 2px;
+    opacity: 0;
+    
+  }
   .site-nav .link:hover,
   .site-nav .link:focus {
     color:#404BBF;
 
+
+  }
+  .link:hover::after,
+  .link:focus::after{
+    opacity: 1;
   }
   .site-nav .current {
-    color:#404BBF;
-    ;
+    position: relative;
+    
   }
   address{
+    
     font-style: normal;
   }
   .telmail {
@@ -119,6 +156,24 @@ margin-bottom: 16px;
     color: #ffffff;
     padding-top: 188px;
     padding-bottom: 188px;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.70),
+      rgba(46, 47, 66, 0.70)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+  text-align: center;
   }
   .order-content{
     
