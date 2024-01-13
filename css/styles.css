@@ -385,27 +385,18 @@ overflow: hidden;
   left: 0px;
   right: 0px;
   background-color: #4D5AE5;
-  
-  letter-spacing: 0.02em;
- 
   padding: 40px 32px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-
-
   color: #F4F4FD;
-
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.4px;
-
-transition: opacity 500ms linear;
-
-  
+ font-family: Roboto;
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 24px;
+ letter-spacing: 0.02em;
+ transition: opacity 500ms linear;
+ 
 }
 .card-overlay:hover .overlay-description{
   opacity: 1;
@@ -434,10 +425,12 @@ margin-bottom: 8px;
   
 }
 .example-card .overlay-description:hover{
-  transform: translateY(0%);
+  /* transform: translateY(0%); */
+  opacity: 1;
 }
 .example-card:hover{
   box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
 }
 .example-card-text{
   padding: 32px 16px;
