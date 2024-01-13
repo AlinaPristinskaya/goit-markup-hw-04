@@ -395,7 +395,8 @@ overflow: hidden;
  font-weight: 400;
  line-height: 24px;
  letter-spacing: 0.02em;
- transition: opacity 500ms linear;
+ 
+ transition: opacity transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
  
 }
 .card-overlay:hover .overlay-description{
