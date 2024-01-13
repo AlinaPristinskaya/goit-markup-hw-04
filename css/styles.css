@@ -388,6 +388,9 @@ transition: opacity 500ms linear;
 .example-card:hover .overlay-description{
   opacity: 1;
 }
+.around-img{
+  
+}
 .text{
 
 font-size: 16px;
