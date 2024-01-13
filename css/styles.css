@@ -343,6 +343,13 @@ justify-content: center;
 align-items: center;
 gap: 24px;
 }
+.socmediaicon{
+  display: flex;
+}
+.socmediaicon:hover,
+.socmediaicon:focus{
+  background-color: #404bbf;
+}
 .card{
   width: calc((100% - 24 * 3) / 4);
   background-color: #FFFFFF ;
@@ -388,9 +395,7 @@ transition: opacity 500ms linear;
 .example-card:hover .overlay-description{
   opacity: 1;
 }
-.around-img{
-  
-}
+
 .text{
 
 font-size: 16px;
@@ -444,3 +449,6 @@ text-align: center;
 color: #2e2f42 ;
 }
 
+.grey{
+  fill: #f4f4fd;
+}
