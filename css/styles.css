@@ -446,10 +446,17 @@ margin-bottom: 8px;
 }
 .footercontent{
   display: flex;
-  gap:120px
+  align-items: baseline;
 }
-.firstline{
+/* .firstline{
   padding-bottom: 16px;
+
+} */
+.subtitle{
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .headertwo{
@@ -466,4 +473,7 @@ color: #2e2f42 ;
 
 .grey{
   fill: #f4f4fd;
+}
+.textfooter{
+  margin-right: 120px
 }
